@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using WebAPI;
 using WebAPI.Data;
+using WebAPI.Interfaces;
+using WebAPI.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +18,15 @@ builder.Services.AddDbContext<DataContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+
+builder.Services.AddScoped<ISmartPhoneRepository, SmartPhoneRepository>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<ICountryRepository, CountryRepository>();
+builder.Services.AddScoped<IOwnerRepository, OwnerRepository>();
+builder.Services.AddScoped<IReviewRepository, ReviewRepository>();
+builder.Services.AddScoped<IReviewerRepository, ReviewerRepository>();
+builder.Services.AddScoped<IOwnerRepository, OwnerRepository>();
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 var app = builder.Build();
 

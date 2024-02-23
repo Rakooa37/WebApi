@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4YphfrACSSFu+e5HHmagcS2JxAu9yf4flEu/7tds2uObX8DY3/NaMpUfbV/z0MfGpGeerQkqVz7T4DEU2uyvTQ==",
+  "dgSpecHash": "5aboXBIQagyMIIsrusYS9Wq1Xjtgt0G+woq9chOiokM2QN7x/rIk9DvCqbBTYZfK/SVVPgjhjynbsl0XW84WOA==",
   "success": true,
   "projectFilePath": "C:\\Users\\CSR5\\source\\repos\\WebAPI\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\CSR5\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\CSR5\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\CSR5\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\CSR5\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

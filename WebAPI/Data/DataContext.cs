@@ -38,10 +38,6 @@ namespace WebAPI.Data
             modelBuilder.Entity<SmartPhoneOwner>().HasOne(s => s.Owner)
                 .WithMany(so => so.SmartPhoneOwners)
                 .HasForeignKey(so => so.OwnerId);
-
-
         }
-
-
     }
 }
